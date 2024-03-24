@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt"> <!--deixando a página em português-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="X-UA-Compatible" content="IE=edge"> <!--deixando a página compativel com diversos navegadores-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador de Números</title>
+    <link rel="stylesheet" href="main.css"> <!--anexando o CSS ao HTML-->
+</head>
+<body>
+    <div class="container">   
+        <h1>Comparador de números</h1>
+        <h2>Veja qual número é maior</h2>
+        <h4 id="fraseinicial">Lembre-se que o número maior precisa ser digitado sempre no segundo campo. </h4>
+        <h4>A calculadora aceita até 2 números decimais</h4>
+        <h4 id="perguntainicial">Vamos ver se você consegue acertar?</h>
+        <form id="calcula_numero">
+            <input type="number" step="0.01" id="number1" required placeholder="Digite o número desejado"> <!--o step deixa o usuário digitar numeros decimais-->
+            <input type="number" step="0.01" id="number2" required placeholder="Digite o número desejado"> <!--o required faz o campo ser obrigatório-->
+            <button id="btn-calcular" type="submit">VERIFICAR</button> <!--o submit faz o botão enviar os dados do formulário-->
+            <button id="btn-limpar" type="reset">LIMPAR FORMULÁRIO</button> <!--Botão para limpar todo o formulário-->
+            <p class="resultado"></p> <!--Cria uma classe RESULTADO, o conteúdo será baseado no JS-->
+        </form>
+    </div>
+    <script src="./main.js"> </script> <!--anexando o JS ao HTML-->
+</body>
+</html>
